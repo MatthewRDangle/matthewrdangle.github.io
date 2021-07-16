@@ -13,9 +13,10 @@
 *
 * * Color Theme
 * *------------------
-* * Font:			#000000
-* * Background:		#FFFFFF
-* * Highlight:		#4553FB
+* * Font:			#FFFFFF
+* * Background:		#121928
+* * Highlight:		#3DC9FF
+* * Shadow:         rgba(0,0,0,0.5)
 */
 
 /*
@@ -23,3 +24,64 @@
 * * ===================[Module CSS]===================
 * * ==================================================
 */
+
+.caseStudy {
+    position: relative;
+    display: block;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: box-shadow .2s;
+    color: inherit;
+}
+.caseStudy .caseStudy_tag {
+    position: absolute;
+        top: 15px;
+        right: 20px;
+
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+}
+.caseStudy .caseStudy_pic {
+    width: 100%;
+    height: 174px;
+    background-color: #FFFFFF; /* TEMP */
+    overflow: hidden;
+}
+.caseStudy .caseStudy_pic_img {
+    width: 100%;
+}
+.caseStudy .caseStudy_info {
+    padding: 10px 20px;
+}
+.caseStudy:hover {
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
+    color: inherit;
+}
+
+
+
+.caseStudyList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.caseStudyList_item {
+    flex-basis: 350px;
+}
+
+
+
+.logo {
+    /* Aesthetic */
+}
+
+
+
+.siteHeader {}
+.siteHeader .siteHeader_logo {}
+.siteHeader .siteHeader_email {}

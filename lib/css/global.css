@@ -13,9 +13,10 @@
 *
 * * Color Theme
 * *------------------
-* * Font:			#000000
-* * Background:		#FFFFFF
-* * Highlight:		#4553FB
+* * Font:			#FFFFFF
+* * Background:		#121928
+* * Highlight:		#3DC9FF
+* * Shadow:         rgba(0,0,0,0.5)
 */
 
 /*
@@ -23,3 +24,7 @@
 * * ===================[Global CSS]===================
 * * ==================================================
 */
+
+.module {
+    width: 100%;
+}
