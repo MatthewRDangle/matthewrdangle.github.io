@@ -76,12 +76,29 @@
 
 
 
-.logo {
-    /* Aesthetic */
+.logo {}
+.logo .logo_pic {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: black;
 }
+.logo .logo_name {
+    font-size: 1.25em;
+}
+.logo .logo_title {}
 
 
 
-.siteHeader {}
-.siteHeader .siteHeader_logo {}
-.siteHeader .siteHeader_email {}
+.siteHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.siteHeader .siteHeader_logo {
+    flex-basis: 300px;
+}
+.siteHeader .siteHeader_contact {
+    flex: 1 1 100%;
+    text-align: right;
+}
