@@ -99,12 +99,13 @@
 }
 .logo .logo_name {
     padding-top: 16px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
 }
 .logo .logo_title {
     text-align: center;
+    font-size: 1.25em;
 }
 
 
@@ -122,8 +123,8 @@
 .siteHeader .siteHeader_contact {
     display: block;
     text-align: center;
-    margin: 1.15em;
-    font-size: 1.25em;
+    margin: 1.25em;
+    font-size: 1.5em;
     white-space: nowrap;
 }
 .siteHeader .siteHeader_contact_link {
