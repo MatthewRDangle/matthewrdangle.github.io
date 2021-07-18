@@ -16,6 +16,7 @@
 * * Font:			#FFFFFF
 * * Background:		#121928
 * * Highlight:		#3DC9FF
+* * Foreground:     #1C324B
 * * Shadow:         rgba(0,0,0,0.5)
 */
 
@@ -63,7 +64,7 @@ html, body {
 /* [Device Size Response] : Small Devices - Large Cell Phones and Extra Small Tablets.*/
 @media only screen and (min-width: 480px) {
     .wrapper {
-        width: 420px;
+        width: 95%;
     }
 }
 
@@ -106,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     padding: 0 0 0 0;
-    margin: 2em auto 3em auto;
+    margin: 2em auto 2em auto;
     font-size: 2.25em;
     line-height: 1.5em;
     text-align: center;

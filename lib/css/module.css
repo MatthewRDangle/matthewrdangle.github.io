@@ -16,6 +16,7 @@
 * * Font:			#FFFFFF
 * * Background:		#121928
 * * Highlight:		#3DC9FF
+* * Foreground:     #1C324B
 * * Shadow:         rgba(0,0,0,0.5)
 */
 
@@ -68,37 +69,68 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .caseStudyList_item {
     flex-basis: 350px;
+    margin: 25px 10px;
 }
 
 
 
-.logo {}
-.logo .logo_pic {
-    float: left;
-    width: 30px;
-    height: 30px;
-    background-color: black;
+.logo {
+    position: relative;
+    line-height: 1.5;
+}
+.logo .logo_circle {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #1C324B;
+    border-radius: 60px;
+}
+.logo .logo_circle_pic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 60px;
 }
 .logo .logo_name {
+    padding-top: 16px;
     font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
 }
-.logo .logo_title {}
+.logo .logo_title {
+    text-align: center;
+}
 
 
 
 .siteHeader {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 .siteHeader .siteHeader_logo {
-    flex-basis: 300px;
+    display: block;
+    margin: 0 auto;
 }
 .siteHeader .siteHeader_contact {
-    flex: 1 1 100%;
-    text-align: right;
+    display: block;
+    text-align: center;
+    margin: 1.15em;
+    font-size: 1.25em;
+    white-space: nowrap;
+}
+.siteHeader .siteHeader_contact_link {
+    color: #FFFFFF;
+    transition: color .2s;
+    margin: 0 10px;
+}
+.siteHeader .siteHeader_contact_link:hover, .siteHeader .siteHeader_contact_link:focus {
+    color: #3DC9FF;
 }
