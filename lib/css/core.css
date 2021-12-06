@@ -32,11 +32,14 @@
 */
 @font-face {
     font-family: 'Comfortaa';
-    src: url('../font/Comfortaa-VariableFont_wght.tff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../font/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('../font/OpenSans-Regular.tff');
+    src: url('../font/OpenSans-Regular.ttf') format('truetype');
 }
 * {
     box-sizing: border-box;

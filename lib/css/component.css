@@ -96,9 +96,18 @@
 
 
 .nav {}
-.nav .nav_link {
+.nav_link {
+    display: inline-block;
     color: #FFFFFF;
     margin: 0 5px;
+    font-size: 1.2em;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom .2s;
+}
+.nav_link:hover, .nav_link:focus {
+    color: #FFFFFF;
+    border-bottom-color: #60C760;
+    outline: 0;
 }
 
 
