@@ -78,6 +78,7 @@
 .caseStudy:hover, .caseStudy:focus {
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     color: inherit;
+    outline: 0;
 }
 
 
@@ -114,6 +115,8 @@
 
 .siteHeader {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
     font-family: 'Comfortaa', serif;
