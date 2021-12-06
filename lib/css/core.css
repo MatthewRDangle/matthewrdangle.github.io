@@ -68,10 +68,17 @@ html, body {
     margin: 0 auto;
 }
 
+/* [Device Size Response] : Very Small Devices - Extra Small Phones.*/
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
 /* [Device Size Response] : Small Devices - Large Cell Phones and Extra Small Tablets.*/
 @media only screen and (min-width: 480px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -114,15 +121,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    padding: 5em 0;
+    padding: min(175px, 25vw) 0;
     margin: 0 auto 0 auto;
     font-size: 2.25em;
     line-height: 1.25em;
     letter-spacing: -2px;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     width: 800px;
     max-width: 100%;
+}
+
+/* [Device Size Response] : Medium Devices - Small Tablets.*/
+@media only screen and (min-width: 760px) {
+    h1 {
+        text-align: center;
+    }
 }
 
 h2 {
@@ -341,14 +355,14 @@ img {
 
 ::-webkit-scrollbar-thumb {
     border-width: 3px;
-    background-color: #3DC9FF;
+    background-color: #4697F6;
     background-clip: padding-box;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #3DC9FF;
+    background-color: #4697F6;
 }
 
 /*
