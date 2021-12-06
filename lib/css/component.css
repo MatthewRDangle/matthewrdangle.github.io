@@ -9,7 +9,7 @@
 * * Selector Groups: How the CSS selectors are organized for better readability.
 * * * [Device Size Response]: How the element will respond to different device sizes.
 ------------------
-* * Unique Classes: [.wrapper .header, .subheader, .anchor, .selection]
+* * Unique Classes: [.wrapper .subheader, .anchor, .selection]
 *
 * * Color Theme
 * *------------------
@@ -26,6 +26,19 @@
 * * ==================================================
 */
 
+.brandColor--green {
+    color: #60C760;
+}
+.brandColor--red {
+    color: #EB5E61;
+}
+.brandColor--yellow {
+    color: #E7BD52;
+}
+.brandColor--blue {
+    color: #4697F6;
+}
+
 .caseStudy {
     position: relative;
     display: block;
@@ -37,7 +50,7 @@
     transition: box-shadow .2s;
     color: inherit;
 }
-.caseStudy .caseStudy_tag {
+.caseStudy_tag {
     position: absolute;
         top: 15px;
         right: 20px;
@@ -46,17 +59,21 @@
     border-radius: 20px;
     background-color: rgba(0,0,0,0.75);
 }
-.caseStudy .caseStudy_pic {
+.caseStudy_pic {
     width: 100%;
     height: 173px;
     background-color: #FFFFFF; /* TEMP */
     overflow: hidden;
 }
-.caseStudy .caseStudy_pic_img {
+.caseStudy_pic_img {
     width: 100%;
 }
-.caseStudy .caseStudy_info {
+.caseStudy_info {
     padding: 10px 20px;
+}
+.caseStudy_info h2 {
+    margin-left: 0;
+    margin-right: 0;
 }
 .caseStudy:hover, .caseStudy:focus {
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
@@ -78,60 +95,33 @@
 
 
 
-.logo {
-    position: relative;
-    line-height: 1.5;
-}
-.logo .logo_circle {
-    width: 75px;
-    height: 75px;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #1C324B;
-    border-radius: 60px;
-}
-.logo .logo_circle_pic {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 60px;
-}
-.logo .logo_name {
-    padding-top: 16px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-.logo .logo_title {
-    text-align: center;
-    font-size: 1.25em;
+.nav {}
+.nav .nav_link {
+    color: #FFFFFF;
+    margin: 0 5px;
 }
 
 
 
 .siteHeader {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 40px;
+    font-family: 'Comfortaa', serif;
 }
-.siteHeader .siteHeader_logo {
-    display: block;
-    margin: 0 auto;
-}
-.siteHeader .siteHeader_contact {
+.siteHeader_logo {}
+.siteHeader_contact {
     display: block;
     text-align: center;
     margin: 1.25em;
     font-size: 1.5em;
     white-space: nowrap;
 }
-.siteHeader .siteHeader_contact_link {
+.siteHeader_contact_link {
     color: #FFFFFF;
     transition: color .2s;
     margin: 0 10px;
 }
-.siteHeader .siteHeader_contact_link:hover, .siteHeader .siteHeader_contact_link:focus {
+.siteHeader_contact_link:hover, .siteHeader_contact_link:focus {
     color: #3DC9FF;
 }

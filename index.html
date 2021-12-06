@@ -13,52 +13,77 @@
 
     <!-- CSS & JS : Site Specific -->
     <link rel="stylesheet" type="text/css" href="lib/css/core.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/module.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/component.css">
     <link rel="stylesheet" type="text/css" href="lib/css/global.css">
 
 </head>
 <body>
-    <main class="wrapper">
 
-        <div class="siteHeader module">
-            <div class="siteHeader_logo">
-                <div class="logo">
-                    <div class="logo_circle" role="presentation">
-                        <div class="logo_circle_pic">
-                            <img src="lib/image/profile_pic.jpg" alt="A man looking outward." style="width: 100%;"/>
-                        </div>
-                    </div>
-                    <div class="logo_name">
-                        <span>Matthew R. Dangle</span>
-                    </div>
-                    <div class="logo_title">
-                        <span>Communications Strategist</span>
-                    </div>
-                </div>
-            </div>
-            <div class="siteHeader_contact">
-                <a class="siteHeader_contact_link" href="https://dribbble.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Dribbble profile in a new tab." aria-label="Open Dribbble Profile">
-                    <i class="fab fa-dribbble" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://www.behance.net/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Behance profile in a new tab." aria-label="Open Behance Profile">
-                    <i class="fab fa-behance" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://github.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Github profile in a new tab." aria-label="Open Github Profile">
-                    <i class="fab fa-github" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://twitter.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Twitter profile in a new tab." aria-label="Open Twitter Profile">
-                    <i class="fab fa-twitter" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://www.instagram.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Instagram profile in a new tab." aria-label="Open Instagram Profile">
-                    <i class="fab fa-instagram" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://www.linkedin.com/in/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' LinkedIn profile in a new tab." aria-label="Open LinkedIn Profile">
-                    <i class="fab fa-linkedin" role="presentation"></i></a>
-                <a class="siteHeader_contact_link" href="https://www.facebook.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Facebook profile in a new tab." aria-label="Open Facebook Profile">
-                    <i class="fab fa-facebook" role="presentation"></i></a>
-            </div>
+    <header class="siteHeader wrapper">
+        <div class="siteHeader_logo">
+            <span>MatthewRDangle</span>
         </div>
+        <div class="siteHeader_nav">
+            <nav class="nav">
+                <a class="nav_link" href="https://dribbble.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Dribbble profile in a new tab." aria-label="Open Dribbble Profile">
+                    <i class="fab fa-dribbble" role="presentation"></i></a>
+                <a class="nav_link" href="https://www.behance.net/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Behance profile in a new tab." aria-label="Open Behance Profile">
+                    <i class="fab fa-behance" role="presentation"></i></a>
+                <a class="nav_link" href="https://github.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Github profile in a new tab." aria-label="Open Github Profile">
+                    <i class="fab fa-github" role="presentation"></i></a>
+                <a class="nav_link" href="https://twitter.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Twitter profile in a new tab." aria-label="Open Twitter Profile">
+                    <i class="fab fa-twitter" role="presentation"></i></a>
+                <a class="nav_link" href="https://www.instagram.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Instagram profile in a new tab." aria-label="Open Instagram Profile">
+                    <i class="fab fa-instagram" role="presentation"></i></a>
+                <a class="nav_link" href="https://www.linkedin.com/in/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' LinkedIn profile in a new tab." aria-label="Open LinkedIn Profile">
+                    <i class="fab fa-linkedin" role="presentation"></i></a>
+                <a class="nav_link" href="https://www.facebook.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Facebook profile in a new tab." aria-label="Open Facebook Profile">
+                    <i class="fab fa-facebook" role="presentation"></i></a>
+            </nav>
+        </div>
+    </header>
 
-        <h1>My mission is to organize information and make it <em>accessible</em>, <em>helpful</em>, and <em>aesthetically</em> appealing.</h1>
+    <main class="siteContent wrapper">
+
+<!--        <div class="siteHeader component">-->
+<!--            <div class="siteHeader_logo">-->
+<!--                <div class="logo">-->
+<!--                    <div class="logo_circle" role="presentation">-->
+<!--                        <div class="logo_circle_pic">-->
+<!--                            <img src="lib/image/profile_pic.jpg" alt="A man looking outward." style="width: 100%;"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="logo_name">-->
+<!--                        <span>Matthew R. Dangle</span>-->
+<!--                    </div>-->
+<!--                    <div class="logo_title">-->
+<!--                        <span>Communications Strategist</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="siteHeader_contact">-->
+<!--                <a class="siteHeader_contact_link" href="https://dribbble.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Dribbble profile in a new tab." aria-label="Open Dribbble Profile">-->
+<!--                    <i class="fab fa-dribbble" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://www.behance.net/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Behance profile in a new tab." aria-label="Open Behance Profile">-->
+<!--                    <i class="fab fa-behance" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://github.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Github profile in a new tab." aria-label="Open Github Profile">-->
+<!--                    <i class="fab fa-github" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://twitter.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Twitter profile in a new tab." aria-label="Open Twitter Profile">-->
+<!--                    <i class="fab fa-twitter" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://www.instagram.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Instagram profile in a new tab." aria-label="Open Instagram Profile">-->
+<!--                    <i class="fab fa-instagram" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://www.linkedin.com/in/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' LinkedIn profile in a new tab." aria-label="Open LinkedIn Profile">-->
+<!--                    <i class="fab fa-linkedin" role="presentation"></i></a>-->
+<!--                <a class="siteHeader_contact_link" href="https://www.facebook.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Facebook profile in a new tab." aria-label="Open Facebook Profile">-->
+<!--                    <i class="fab fa-facebook" role="presentation"></i></a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <h1>Information should be <em class="brandColor--green">accessible</em>, <em class="brandColor--red">helpful</em> and <em class="brandColor--yellow">aesthetically</em> appealing.</h1>
 
         <div class="caseStudyList">
             <article class="caseStudyList_item">
-                <a class="caseStudy module" href="https://www.behance.net/gallery/107374155/Union-Management-App" rel="noopener" target="_blank" label="Opens the Behance Case Study for Union Management App in a new tab.">
+                <a class="caseStudy component" href="https://www.behance.net/gallery/107374155/Union-Management-App" rel="noopener" target="_blank" label="Opens the Behance Case Study for Union Management App in a new tab.">
                     <div class="caseStudy_tag">
                         <span>UI/UX</span>
                     </div>
@@ -72,7 +97,7 @@
                 </a>
             </article>
             <article class="caseStudyList_item">
-                <a class="caseStudy module" href="https://www.behance.net/gallery/107382601/Anteil-Visual-Branding" rel="noopener" target="_blank" label="Opens the Behance Case Study for Anteil in a new tab.">
+                <a class="caseStudy component" href="https://www.behance.net/gallery/107382601/Anteil-Visual-Branding" rel="noopener" target="_blank" label="Opens the Behance Case Study for Anteil in a new tab.">
                     <div class="caseStudy_tag">
                         <span>Branding</span>
                     </div>
@@ -86,7 +111,7 @@
                 </a>
             </article>
             <article class="caseStudyList_item">
-                <a class="caseStudy module" href="https://www.behance.net/gallery/100602093/QuickReports-Visual-Branding" rel="noopener" target="_blank" title="Opens the Behance Case Study for Quick Reports in a new tab." aria-label="Open Case Study">
+                <a class="caseStudy component" href="https://www.behance.net/gallery/100602093/QuickReports-Visual-Branding" rel="noopener" target="_blank" title="Opens the Behance Case Study for Quick Reports in a new tab." aria-label="Open Case Study">
                     <div class="caseStudy_tag">
                         <span>Branding</span>
                     </div>
@@ -100,7 +125,7 @@
                 </a>
             </article>
             <article class="caseStudyList_item" >
-                <a class="caseStudy module" href="https://www.behance.net/gallery/89077167/uConnect-UXUI" rel="noopener" target="_blank" title="Opens the Behance Case Study UX UI for uConnect in a new tab." aria-label="Open Case Study">
+                <a class="caseStudy component" href="https://www.behance.net/gallery/89077167/uConnect-UXUI" rel="noopener" target="_blank" title="Opens the Behance Case Study UX UI for uConnect in a new tab." aria-label="Open Case Study">
                     <div class="caseStudy_tag">
                         <span>UI/UX</span>
                     </div>
@@ -114,7 +139,7 @@
                 </a>
             </article>
             <article class="caseStudyList_item">
-                <a class="caseStudy module" href="https://www.behance.net/gallery/46832329/Development-Club-Logo" rel="noopener" target="_blank" title="Opens the Behance Case Study for Development Club Logo in a new tab." aria-label="Open Case Study">
+                <a class="caseStudy component" href="https://www.behance.net/gallery/46832329/Development-Club-Logo" rel="noopener" target="_blank" title="Opens the Behance Case Study for Development Club Logo in a new tab." aria-label="Open Case Study">
                     <div class="caseStudy_tag">
                         <span>Branding</span>
                     </div>
