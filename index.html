@@ -26,6 +26,9 @@
     <link rel="stylesheet" type="text/css" href="lib/css/component.css">
     <link rel="stylesheet" type="text/css" href="lib/css/global.css">
 
+    <!-- Scripts -->
+    <script src="lib/js/utility.js" defer></script>
+
 </head>
 <body>
 
@@ -35,22 +38,21 @@
         </div>
         <div class="siteHeader_nav">
             <div class="siteHeader_nav_hamburger hide--desktopOnly">
-                <label class="hamburger component" tabindex="0" for="mobileMenuToggler" role="button" aria-label="Open Navigation.">
+                <button class="hamburger component" aria-label="Open Navigation." onclick="toggleNav()">
                     <span class="hamburger_bar"></span>
                     <span class="hamburger_bar"></span>
                     <span class="hamburger_bar"></span>
-                </label>
+                </button>
             </div>
 
-            <input id='mobileMenuToggler' class="siteHeader_nav_mobileMenuToggle hide" type="checkbox"/>
-            <div class="siteHeader_nav_container">
+            <div class="siteHeader_nav_container" id="nav">
                 <nav class="nav component">
 
                     <div class="nav_close hide--desktopOnly">
-                        <label class="XB component" tabindex="0" for="mobileMenuToggler" role="button" aria-label="Close Navigation.">
+                        <button class="XB component" aria-label="Close Navigation." onclick="toggleNav()">
                             <span class="XB_bar"></span>
                             <span class="XB_bar"></span>
-                        </label>
+                        </button>
                     </div>
 
                     <a class="nav_link" href="https://dribbble.com/matthewrdangle" rel="noopener" target="_blank" title="Opens Matthew R. Dangles' Dribbble profile in a new tab." aria-label="Open Dribbble Profile">
