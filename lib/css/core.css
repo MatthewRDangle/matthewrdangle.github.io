@@ -15,8 +15,7 @@
 * *------------------
 * * Font:			#FFFFFF
 * * Background:		#121928
-* * Highlight:		#3DC9FF
-* * Foreground:     #1C324B
+* * Highlight:		#60C760
 * * Shadow:         rgba(0,0,0,0.5)
 */
 
@@ -71,42 +70,42 @@ html, body {
 /* [Device Size Response] : Very Small Devices - Extra Small Phones.*/
 @media only screen and (max-width: 480px) {
     .wrapper {
-        width: 90%;
+        width: 90% !important;
     }
 }
 
 /* [Device Size Response] : Small Devices - Large Cell Phones and Extra Small Tablets.*/
 @media only screen and (min-width: 480px) {
     .wrapper {
-        width: 90%;
+        width: 90% !important;
     }
 }
 
 /* [Device Size Response] : Medium Devices - Small Tablets.*/
 @media only screen and (min-width: 760px) {
     .wrapper {
-        width: 700px;
+        width: 700px !important;
     }
 }
 
 /* [Device Size Response] : Medium Devices - Large Tablets Small Laptops.*/
 @media only screen and (min-width: 920px) {
     .wrapper {
-        width: 820px;
+        width: 820px !important;
     }
 }
 
 /* [Device Size Response] : Medium Devices - Large Laptops and Small Desktops.*/
 @media only screen and (min-width: 1100px) {
     .wrapper {
-        width: 950px;
+        width: 950px !important;
     }
 }
 
 /* [Device Size Response] : Medium Devices - Large Desktops.*/
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        width: 1200px;
+        width: 1200px !important;
     }
 }
 

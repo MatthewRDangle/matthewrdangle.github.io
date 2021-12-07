@@ -15,8 +15,9 @@
 * *------------------
 * * Font:			#FFFFFF
 * * Background:		#121928
-* * Highlight:		#3DC9FF
-* * Foreground:     #1C324B
+* * Highlight:		#60C760
+* * Highlight 2:    #4697F6
+* * Warning:        #EB5E61
 * * Shadow:         rgba(0,0,0,0.5)
 */
 
@@ -25,19 +26,6 @@
 * * ===================[Module CSS]===================
 * * ==================================================
 */
-
-.brandColor--green {
-    color: #60C760;
-}
-.brandColor--red {
-    color: #EB5E61;
-}
-.brandColor--yellow {
-    color: #E7BD52;
-}
-.brandColor--blue {
-    color: #4697F6;
-}
 
 .caseStudy {
     position: relative;
@@ -96,20 +84,100 @@
 
 
 
-.nav {}
-.nav_link {
-    display: inline-block;
-    color: #FFFFFF;
-    margin: 0 5px;
-    font-size: 1.2em;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom .2s;
+.hamburger {
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
 }
-.nav_link:hover, .nav_link:focus {
-    color: #FFFFFF;
-    border-bottom-color: #60C760;
+.hamburger_bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    transition: width .2s, background-color .2s;
+}
+.hamburger_bar:nth-child(2) {
+    width: 75%;
+}
+.hamburger_bar:last-child {
+    width: 35%;
+    margin-bottom: 0;
+}
+.hamburger:hover, .hamburger:focus {
     outline: 0;
 }
+.hamburger:hover .hamburger_bar,
+.hamburger:focus .hamburger_bar {
+    background-color: #4697F6;
+    width: 100%;
+}
+
+
+
+.nav {
+    display: block;
+    height: 100%;
+    padding: 40px 10%;
+    overflow: hidden;
+    background-color: #121928;
+}
+.nav_close {
+    width: 35px;
+    margin-left: auto;
+}
+.nav_link {
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+.nav_link:hover .nav_link_label, .nav_link:focus .nav_link_label {
+    border-bottom-color: transparent;
+}
+.nav_link:hover .nav_link_icon, .nav_link:focus .nav_link_icon {
+    border-bottom-color: #60C760;
+}
+
+.nav_link_label {
+    display: inline-block;
+    transition: border-bottom .2s, color .2s;
+    border-bottom: 3px solid #60C760;
+}
+.nav_link_icon {
+    display: inline-block;
+    padding-bottom: 3px;
+    transition: border-bottom .2s, color .2s;
+    border-bottom: 3px solid transparent;
+}
+@media only screen and (min-width: 920px) {
+    .nav {
+        height: initial;
+        padding: 0;
+        background-color: transparent;
+    }
+    .nav_link {
+        display: inline-block;
+        margin-left: 0.75em;
+    }
+}
+
+/*.nav_link {*/
+/*    display: inline-block;*/
+/*    color: #FFFFFF;*/
+/*    margin: 0 5px;*/
+/*    font-size: 1.2em;*/
+/*    border-bottom: 3px solid transparent;*/
+/*    transition: border-bottom .2s;*/
+/*}*/
+/*.nav_link:hover, .nav_link:focus {*/
+/*    color: #FFFFFF;*/
+/*    border-bottom-color: #60C760;*/
+/*    outline: 0;*/
+/*}*/
 
 
 
@@ -122,18 +190,71 @@
     font-family: 'Comfortaa', serif;
 }
 .siteHeader_logo {}
-.siteHeader_contact {
+.siteHeader_nav {}
+.siteHeader_nav_hamburger {
+    width: 35px;
+}
+.siteHeader_nav_mobileMenuToggle {}
+.siteHeader_nav_mobileMenuToggle:checked ~ .siteHeader_nav_container {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: visibility 0s, opacity 1s, transform 1s;
+}
+.siteHeader_nav_container {
+    visibility: hidden;
+    position: absolute;
+        top: -100%;
+        left: 0;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(0);
+    transition: visibility 1s 0s, opacity 1s, transform 1s;
+}
+@media only screen and (min-width: 920px) {
+    .siteHeader_nav_container {
+        visibility: visible;
+        position: relative;
+            top: 0;
+            left: 0;
+
+        width: initial;
+        height: initial;
+        opacity: 1;
+        transition: initial;
+    }
+}
+
+
+
+
+.XB {
+    cursor: pointer;
+    padding: 0;
+    height: 30px;
+    background-color: transparent;
+}
+.XB_bar {
     display: block;
-    text-align: center;
-    margin: 1.25em;
-    font-size: 1.5em;
-    white-space: nowrap;
+    width: 100%;
+    height: 3px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    background-color: #EB5E61;
+    border-radius: 10px;
+    transform: rotate(45deg) translate(10px, 9px);
+    transition: width .2s, background-color .2s;
 }
-.siteHeader_contact_link {
-    color: #FFFFFF;
-    transition: color .2s;
-    margin: 0 10px;
+.XB_bar:last-child {
+    transform: rotate(-45deg);
 }
-.siteHeader_contact_link:hover, .siteHeader_contact_link:focus {
-    color: #3DC9FF;
+.XB:hover, .XB:focus {
+    outline: 0;
+}
+.XB:hover .XB_bar, .XB:focus .XB_bar {
+    background-color: #FFFFFF;
 }

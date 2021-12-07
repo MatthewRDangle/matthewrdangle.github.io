@@ -15,8 +15,7 @@
 * *------------------
 * * Font:			#FFFFFF
 * * Background:		#121928
-* * Highlight:		#3DC9FF
-* * Foreground:     #1C324B
+* * Highlight:		#60C760
 * * Shadow:         rgba(0,0,0,0.5)
 */
 
@@ -26,6 +25,33 @@
 * * ==================================================
 */
 
-.module {
+.brandColor--green {
+    color: #60C760;
+}
+.brandColor--red {
+    color: #EB5E61;
+}
+.brandColor--yellow {
+    color: #E7BD52;
+}
+.brandColor--blue {
+    color: #4697F6;
+}
+
+.component {
     width: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+@media only screen and (max-width: 920px) {
+    .hide--mobileOnly {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 920px) {
+    .hide--desktopOnly {
+        display: none !important;
+    }
 }
