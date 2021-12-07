@@ -119,21 +119,27 @@
 
 .nav {
     display: block;
+    position: relative;
     height: 100%;
     padding: 40px 10%;
-    overflow: hidden;
+    overflow: auto;
     background-color: #121928;
 }
 .nav_close {
+    position: absolute;
+        top: 40px;
+        right: 40px;
     width: 35px;
-    margin-left: auto;
 }
 .nav_link {
     display: block;
     color: #FFFFFF;
     font-size: 1.25em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     text-decoration: none;
+}
+.nav_link:nth-child(2) {
+    margin-top: 70px;
 }
 .nav_link:hover, .nav_link:focus {
     outline: 0;
@@ -147,13 +153,13 @@
 
 .nav_link_label {
     display: inline-block;
-    border-bottom: 3px solid #60C760;
+    border-bottom: 2px solid #60C760;
     transition: border-bottom .5s, color .5s;
 }
 .nav_link_icon {
     display: inline-block;
     padding-bottom: 3px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: border-bottom .5s, color .5s;
 }
 @media only screen and (min-width: 920px) {
@@ -165,6 +171,9 @@
     .nav_link {
         display: inline-block;
         margin: 0 0 0 0.75em;
+    }
+    .nav_link:nth-child(2) {
+        margin-top: 0;
     }
 }
 
