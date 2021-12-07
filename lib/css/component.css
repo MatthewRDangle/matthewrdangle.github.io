@@ -164,7 +164,7 @@
     }
     .nav_link {
         display: inline-block;
-        margin-left: 0.75em;
+        margin: 0 0 0 0.75em;
     }
 }
 
