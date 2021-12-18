@@ -187,7 +187,9 @@
     margin-top: 40px;
     font-family: 'Comfortaa', serif;
 }
-.siteHeader_logo {}
+.siteHeader_logo {
+    font-size: 1.2em;
+}
 .siteHeader_nav {}
 .siteHeader_nav_hamburger {
     width: 35px;
@@ -213,6 +215,10 @@
     transition: visibility 0s, opacity 1s, transform 1s;
 }
 @media only screen and (min-width: 920px) {
+    .siteHeader.wrapper {
+        width: initial !important;
+        padding: 0 40px;
+    }
     .siteHeader_nav_container.show {
         transform: translateY(0);
     }
