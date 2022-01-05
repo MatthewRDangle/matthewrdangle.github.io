@@ -54,6 +54,7 @@ html, body {
     margin: 0; /* Aligns HTML and Body right up against the browser window. */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
     line-height: 1.75; /* Keep this number unitless to avoid overlap and inheritence issues. */
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
     color: #FFFFFF;
@@ -69,54 +70,44 @@ html, body {
     margin: 0 auto;
 }
 
-/* [Device Size Response] : Very Small Devices - Extra Small Phones.*/
 @media only screen and (max-width: 480px) {
     .wrapper {
-        width: 90% !important;
+        width: 90%;
     }
 }
-
-/* [Device Size Response] : Small Devices - Large Cell Phones and Extra Small Tablets.*/
 @media only screen and (min-width: 480px) {
     .wrapper {
-        width: 90% !important;
+        width: 90%;
     }
 }
-
-/* [Device Size Response] : Medium Devices - Small Tablets.*/
 @media only screen and (min-width: 760px) {
     .wrapper {
-        width: 700px !important;
+        width: 700px;
     }
 }
-
-/* [Device Size Response] : Medium Devices - Large Tablets Small Laptops.*/
 @media only screen and (min-width: 920px) {
     .wrapper {
-        width: 820px !important;
+        width: 820px;
     }
 }
-
-/* [Device Size Response] : Medium Devices - Large Laptops and Small Desktops.*/
 @media only screen and (min-width: 1100px) {
     .wrapper {
-        width: 950px !important;
+        width: 950px;
     }
 }
-
-/* [Device Size Response] : Medium Devices - Large Desktops.*/
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        width: 1300px !important;
+        width: 95%;
+        max-width: 1900px;
     }
 }
 
-/* [Device Size Response] : Medium Devices - 4k/Wide devices. */
-@media only screen and (min-width: 1600px) {
-    .wrapper {
-        width: 1400px !important;
-    }
+.miniWrapper {
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+
 
 /*
 * * Title: Font Properties.
