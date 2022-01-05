@@ -34,11 +34,14 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../font/Comfortaa-VariableFont_wght.ttf') format('truetype');
+    src: url('../font/Comfortaa.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../font/OpenSans-Regular.ttf') format('truetype');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../font/Inter.ttf') format('truetype');
 }
 * {
     box-sizing: border-box;
@@ -52,7 +55,6 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.75; /* Keep this number unitless to avoid overlap and inheritence issues. */
-    overflow-x: hidden; /* Hides any content outside the browser window. */
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
     color: #FFFFFF;
     background-color: #121928;
@@ -105,7 +107,14 @@ html, body {
 /* [Device Size Response] : Medium Devices - Large Desktops.*/
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        width: 1200px !important;
+        width: 1300px !important;
+    }
+}
+
+/* [Device Size Response] : Medium Devices - 4k/Wide devices. */
+@media only screen and (min-width: 1600px) {
+    .wrapper {
+        width: 1400px !important;
     }
 }
 
@@ -115,20 +124,17 @@ html, body {
 */
 h1, h2, h3, h4, h5, h6 {
     display: block;
-    font-family: 'Comfortaa', serif;
+    font-family: 'Inter', serif;
     font-weight: bold;
 }
 
 h1 {
     padding: min(175px, 25vw) 0;
     margin: 0 auto 0 auto;
-    font-size: 2.25em;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    font-weight: normal;
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: bold;
     text-align: left;
-    width: 800px;
-    max-width: 100%;
 }
 
 /* [Device Size Response] : Medium Devices - Small Tablets.*/
