@@ -112,16 +112,16 @@
     text-transform: uppercase;
     padding: 0;
     margin: 0 auto;
-    font-size: 7em;
+    font-size: 2.75em;
     line-height: 1;
     font-weight: 900;
     text-align: center;
 }
 .hero > p {
     position: relative;
-    font-size: 1.8em;
+    font-size: 1.15em;
     text-align: center;
-    margin: 1.5em 0 0 0;
+    margin-top: 1.5em;
 }
 
 
