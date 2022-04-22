@@ -93,10 +93,12 @@
 .hero {
     position: relative;
     background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;"> <path d="M0,0L32,0L32,32" style="fill:none;stroke:rgb(39,46,63);stroke-opacity:0.5;stroke-width:1px;"/> </svg>');
+    background-color: #121928;
     padding: min(175px, 25vw) 0;
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: #2E374B;
+    border-radius: 0 0 100% 100%;
 }
 .hero .hero_fade {
     position: absolute;
@@ -104,8 +106,8 @@
         left: 0;
     height: 200px;
     width: 100%;
-    background: rgb(18 25 40);
-    background: linear-gradient(180deg, rgb(18 25 40) 0%, rgba(21,29,47,0) 100%);
+    background: #121928;
+    background: linear-gradient(180deg, rgb(18 25 40) 0%, rgba(18 25 40 / 0) 100%);
 }
 .hero > h1 {
     position: relative;
@@ -122,6 +124,7 @@
     font-size: 1.15em;
     text-align: center;
     margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 
@@ -174,16 +177,15 @@
 
 
 
-.siteContent {}
+.siteContent {
+    background-color: #151d2f;
+}
 
 
 
 .siteFooter {
     padding: 40px 0;
-    border-width: 1px 0;
     font-size: 1.2em;
-    border-style: solid;
-    border-color: #2E374B;
     background-color: #151D2F;
 }
 
