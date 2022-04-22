@@ -91,7 +91,37 @@
 
 
 .hero {
+    position: relative;
     background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;"> <path d="M0,0L32,0L32,32" style="fill:none;stroke:rgb(39,46,63);stroke-opacity:0.5;stroke-width:1px;"/> </svg>');
+    padding: min(175px, 25vw) 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #2E374B;
+}
+.hero .hero_fade {
+    position: absolute;
+        top: 0;
+        left: 0;
+    height: 200px;
+    width: 100%;
+    background: rgb(18 25 40);
+    background: linear-gradient(180deg, rgb(18 25 40) 0%, rgba(21,29,47,0) 100%);
+}
+.hero > h1 {
+    position: relative;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 7em;
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+}
+.hero > p {
+    position: relative;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 1.5em 0 0 0;
 }
 
 
@@ -141,20 +171,6 @@
     border-bottom: 2px solid transparent;
     transition: border-bottom .5s, color .5s;
 }
-@media only screen and (min-width: 920px) {
-    .nav {
-        height: initial;
-        padding: 0;
-        background-color: transparent;
-    }
-    .nav_link {
-        display: inline-block;
-        margin: 0 0 0 0.75em;
-    }
-    .nav_link:nth-child(2) {
-        margin-top: 0;
-    }
-}
 
 
 
@@ -163,9 +179,9 @@
 
 
 .siteFooter {
-    padding: 30px 0;
-    margin-top: 60px;
-    border-width: 1px 0 0 0;
+    padding: 40px 0;
+    border-width: 1px 0;
+    font-size: 1.2em;
     border-style: solid;
     border-color: #2E374B;
     background-color: #151D2F;
@@ -184,7 +200,7 @@
     font-family: 'Comfortaa', serif;
 }
 .siteHeader_logo {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 .siteHeader_nav {}
 .siteHeader_nav_hamburger {
@@ -209,25 +225,6 @@
     opacity: 1;
     transform: translateY(100%);
     transition: visibility 0s, opacity 1s, transform 1s;
-}
-@media only screen and (min-width: 920px) {
-    .siteHeader {
-        padding: 0 40px;
-    }
-    .siteHeader_nav_container.show {
-        transform: translateY(0);
-    }
-    .siteHeader_nav_container {
-        visibility: visible;
-        position: relative;
-            top: 0;
-            left: 0;
-
-        width: initial;
-        height: initial;
-        opacity: 1;
-        transition: initial;
-    }
 }
 
 
