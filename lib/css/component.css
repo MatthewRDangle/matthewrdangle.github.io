@@ -125,6 +125,7 @@
     text-align: center;
 }
 .hero > p {
+    width: 77%;
     position: relative;
     font-size: 1.15em;
     text-align: center;
