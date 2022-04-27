@@ -38,7 +38,7 @@ html, body {
     line-height: 1.75; /* Keep this number unitless to avoid overlap and inheritence issues. */
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
     color: #FFFFFF;
-    background-color: #121928;
+    background-color: #151D2F;
 }
 
 /*
@@ -140,6 +140,7 @@ p {
     display: block;
     padding: 0 0 0 0;
     margin: 1.25em 0;
+    letter-spacing: -1px;
 }
 
 span {

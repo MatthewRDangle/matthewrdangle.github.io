@@ -52,12 +52,13 @@
     }
 
     .siteHeader {
-        padding: 0 40px;
+        padding: 40px 0;
     }
-    .siteHeader_nav_container.show {
+    .siteHeader_container {}
+    .siteHeader_container_nav_container.show {
         transform: translateY(0);
     }
-    .siteHeader_nav_container {
+    .siteHeader_container_nav_container {
         visibility: visible;
         position: relative;
         top: 0;
@@ -84,14 +85,14 @@
 }
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
         max-width: 1600px;
     }
 
     .hero > h1 {
-        font-size: 8em;
+        font-size: 6.5em;
     }
     .hero > p {
-        font-size: 1.8em;
+        font-size: 1.75em;
     }
 }
