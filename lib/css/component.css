@@ -1,58 +1,30 @@
 .caseStudy {
-    position: relative;
-    display: block;
-    box-shadow: 0 10px 20px 5px rgba(0,0,0,0.5);
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: box-shadow .2s;
-    color: inherit;
-}
-.caseStudy_tag {
-    position: absolute;
-        top: 15px;
-        right: 20px;
-
-    padding: 5px 15px;
-    border-radius: 20px;
-    background-color: rgba(0,0,0,0.75);
-}
-.caseStudy_pic {
-    width: 100%;
-    height: 173px;
-    background-color: #FFFFFF; /* TEMP */
-    overflow: hidden;
-}
-.caseStudy_pic_img {
-    width: 100%;
-}
-.caseStudy_info {
-    padding: 10px 20px;
-}
-.caseStudy_info h2 {
-    margin-left: 0;
-    margin-right: 0;
-}
-.caseStudy:hover, .caseStudy:focus {
-    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
-    color: inherit;
-    outline: 0;
-}
-
-
-
-.caseStudyList {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
+    margin: 3vw 0;
+    border-radius: 20px;
 }
-.caseStudyList_item {
-    flex-basis: 350px;
-    margin: 25px 10px;
+.caseStudy_image {
+    width: 100%;
+    text-align: center;
+}
+.caseStudy_content {
+    width: 100%;
+}
+.caseStudy_content_desc {
+    font-size: 1.25em;
+}
+.caseStudy--uConnect .button {
+    background-color: rgba(255,255,255,.5);
+}
+.caseStudy--devClub .button {
+    background-color: #013D34;
+    color: white;
+}
+.caseStudy--devClub .button:hover {
+    color: #013D34;
 }
 
 

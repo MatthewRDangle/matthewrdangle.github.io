@@ -70,20 +70,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     padding: 0 0 0 0;
     margin: 1em 0.25em;
-    font-size: 1.5em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 
 h2 {
     padding: 0 0 0 0;
     margin: 1em 0.25em;
-    font-size: 1.5em;
+    font-size: 3.25em;
     line-height: 1em;
 }
 
 h3 {
     padding: 0 0 0 0;
-    margin: 1em 0.25em;
+    margin: 0;
     font-size: 2em;
     line-height: 0.95em;
 }
@@ -386,21 +386,25 @@ optgroup {
     line-height: inherit;
 }
 
-button, [type="submit"], [type="reset"], [type="button"] {
-    display: block;
+.button, button, [type="submit"], [type="reset"], [type="button"] {
+    display: inline-block;
     width: auto;
-    padding: 2px 5px;
-    margin: 0;
+    padding: 12px 16px;
+    margin: 10px 0 0 0;
     border-width: 1px;
     font-family: inherit;
     font-size: inherit;
+    font-weight: bold;
     line-height: inherit;
     overflow: visible;
     cursor: pointer;
     color: #121928;
     background-color: #3DC9FF;
+    text-decoration: none;
     border-style: solid;
     border-color: transparent;
+    border-radius: 10px;
+    transition: background .2s, color .2s;
     -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari. */
 }
 
@@ -409,9 +413,9 @@ button, [type="submit"], [type="reset"], [type="button"] {
     font: inherit; /* Change font properties to `inherit` in Safari. */
 }
 
-button:hover, [type="submit"]:hover, [type="reset"]:hover, [type="button"]:hover {
+.button:hover, button:hover, [type="submit"]:hover, [type="reset"]:hover, [type="button"]:hover {
     color: inherit;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /*

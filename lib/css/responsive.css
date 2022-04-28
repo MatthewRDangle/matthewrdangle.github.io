@@ -70,6 +70,18 @@
         transition: initial;
     }
 
+    .caseStudy {
+        flex-direction: row;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .caseStudy--alt {
+        flex-direction: row-reverse;
+    }
+    .caseStudy_image, .caseStudy_content {
+        width: 50%;
+    }
+
     .hide--desktopOnly {
         display: none !important;
     }
@@ -85,7 +97,7 @@
 }
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        width: 90%;
+        width: 75%;
         max-width: 1600px;
     }
 
