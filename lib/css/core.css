@@ -413,9 +413,11 @@ optgroup {
     font: inherit; /* Change font properties to `inherit` in Safari. */
 }
 
-.button:hover, button:hover, [type="submit"]:hover, [type="reset"]:hover, [type="button"]:hover {
-    color: inherit;
+.button:hover, button:hover, [type="submit"]:hover, [type="reset"]:hover, [type="button"]:hover,
+.button:focus, button:focus, [type="submit"]:focus, [type="reset"]:focus, [type="button"]:focus {
+    color: inherit !important;
     background-color: transparent !important;
+    outline: 0;
 }
 
 /*
