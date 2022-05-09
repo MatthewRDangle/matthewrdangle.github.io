@@ -2,10 +2,20 @@
     .wrapper {
         width: 90%;
     }
+    .notMobile {
+        display: none;
+    }
+    .caseStudy_image img {
+        height: initial !important;
+        max-width: 100%;
+    }
 }
 @media only screen and (min-width: 480px) {
     .wrapper {
         width: 90%;
+    }
+    .mobileOnly {
+        display: none;
     }
 }
 @media only screen and (min-width: 760px) {
