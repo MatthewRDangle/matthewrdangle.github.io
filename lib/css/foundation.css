@@ -732,13 +732,13 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type=
 }
 .nav_links {
     display: none;
-    position: absolute;
+    position: fixed;
         top: 0;
-        left: 50%;
-    transform: translateX(-50%);
+        left: 0;
     text-align: left;
     width: 100%;
     height: calc(100vh - 5em);
+    padding: 0 40px;
     margin-top: 5em;
     background-color: var(--material-background);
     z-index: 1;
