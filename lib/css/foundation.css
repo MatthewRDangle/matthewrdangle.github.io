@@ -82,6 +82,7 @@
 html, body {
     padding: 0; /* Remove unnecessary padding. */
     margin: 0; /* Remove unnecessary margin. */
+    overflow-x: hidden;
 }
 body {
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
@@ -685,6 +686,7 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type=
         left: 50%;
     transform: translate(-50%, -50%);
     height: 700px;
+    z-index: -1;
 }
 .hero_background_mobile {
     display: block;
